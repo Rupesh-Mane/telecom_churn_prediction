@@ -34,3 +34,5 @@ rough.txt
 notebooks.txt
 
 models/*.pkl
+
+artifacts/final_model.pkl
