@@ -1,6 +1,7 @@
 # Dataset Path
 
 RAW_DATA_PATH = "data/raw/telecom_customer_churn.csv"
+PROCESSED_DATA_PATH = "data/processed/telecom_customer_processed.csv"
 
 # Saved ML artifacts
 MODEL_PATH = "artifacts/final_model.pkl"
