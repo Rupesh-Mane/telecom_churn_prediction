@@ -35,6 +35,7 @@ notebooks.txt
 config.txt
 src.txt
 ingestion.txt
+validation.txt
 
 
 models/*.pkl
