@@ -1,4 +1,52 @@
-import pickle
+"""
+evaluate_model.py
+
+Purpose:
+--------
+This module is responsible for evaluating the trained Machine Learning model.
+
+The model evaluation has already been completed in:
+
+05_model_evaluation.ipynb
+07_final_model.ipynb
+
+Evaluation metrics calculated:
+
+- Accuracy
+- Precision
+- Recall
+- F1 Score
+
+Therefore, this file is not used during FastAPI prediction.
+"""
+
+
+def evaluate_model():
+    print("Model evaluation has already been completed in Jupyter Notebook.")
+
+
+if __name__ == "__main__":
+    evaluate_model()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"""import pickle
 import pandas as pd
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import precision_score
@@ -44,4 +92,4 @@ def evaluate_model():
 
 
 if __name__ == "__main__":
-    evaluate_model()
+    evaluate_model()"""
