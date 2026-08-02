@@ -1,48 +1,55 @@
-# Dataset Path
+# ==========================================
+# DATASET PATHS
+# ==========================================
 
 RAW_DATA_PATH = "data/raw/telecom_customer_churn.csv"
 PROCESSED_DATA_PATH = "data/processed/telecom_customer_processed.csv"
 
-# Saved ML artifacts
+
+# ==========================================
+# ARTIFACT PATHS
+# ==========================================
+
 MODEL_PATH = "artifacts/final_model.pkl"
+
 ENCODER_PATH = "artifacts/encoder.pkl"
+
 SCALER_PATH = "artifacts/scaler.pkl"
 
-""" 
-RAW_DATA_PATH
-      ↓
-Where is my original dataset?
+CAT_IMPUTER_PATH = "artifacts/cat_imputer.pkl"
 
-MODEL_PATH
-      ↓
-Where is my final Random Forest model?
-
-ENCODER_PATH
-      ↓
-Where is my saved encoder?
-
-SCALER_PATH
-      ↓
-Where is my saved scaler?
-"""
+NUM_IMPUTER_PATH = "artifacts/num_imputer.pkl"
 
 
-# ======================
-# Model Settings
-# ======================
-
+# ==========================================
+# MODEL SETTINGS
+# ==========================================
 
 TARGET_COLUMN = "Churn"
 
-TEST_SIZE = 0.2
+TEST_SIZE = 0.20
 
 RANDOM_STATE = 42
 
+
 if __name__ == "__main__":
-    print(RAW_DATA_PATH)
-    print(MODEL_PATH)
-    print(ENCODER_PATH)
-    print(SCALER_PATH)
+
+    print("=" * 50)
+    print("CONFIGURATION FILE")
+    print("=" * 50)
+
+    print(f"Raw Dataset      : {RAW_DATA_PATH}")
+    print(f"Processed Dataset: {PROCESSED_DATA_PATH}")
+
+    print(f"Model            : {MODEL_PATH}")
+    print(f"Encoder          : {ENCODER_PATH}")
+    print(f"Scaler           : {SCALER_PATH}")
+    print(f"Cat Imputer      : {CAT_IMPUTER_PATH}")
+    print(f"Num Imputer      : {NUM_IMPUTER_PATH}")
+
+    print(f"Target Column    : {TARGET_COLUMN}")
+    print(f"Test Size        : {TEST_SIZE}")
+    print(f"Random State     : {RANDOM_STATE}")
     
 #"Run this part only when I directly run this Python file."
 # If another file imports config.py, the code inside that block will not run.
